@@ -1,0 +1,109 @@
+[0m15:44:32.661739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108887710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108887e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088a7d50>]}
+
+
+============================== 15:44:32.669499 | af44bbff-25cf-47c2-b1d3-8b6252d72548 ==============================
+[0m15:44:32.669499 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:44:32.670238 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'printer_width': '80', 'profiles_dir': '/Users/priyankamaheshwari/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'write_json': 'True', 'log_format': 'default', 'invocation_command': 'dbt init netflix', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True'}
+[0m15:44:32.694909 [debug] [MainThread]: Starter project path: /Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m15:44:32.704998 [info ] [MainThread]: 
+Your new dbt project "netflix" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:44:32.705874 [info ] [MainThread]: Setting up your profile.
+[0m15:44:46.508264 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m15:44:46.517602 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/cli/main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/task/init.py", line 243, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m15:44:46.534501 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 13.974229, "process_in_blocks": "0", "process_kernel_time": 0.442056, "process_mem_max_rss": "104173568", "process_out_blocks": "0", "process_user_time": 1.851788}
+[0m15:44:46.535704 [debug] [MainThread]: Command `dbt init` failed at 15:44:46.535472 after 13.98 seconds
+[0m15:44:46.536872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085b7310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10888d350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088172d0>]}
+[0m15:44:46.538627 [debug] [MainThread]: Flushing usage events
+[0m15:44:47.085786 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:45:03.226017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f99010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad4a310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10add7f90>]}
+
+
+============================== 15:45:03.230610 | acf2a20f-6263-4784-a9c0-890dac0312de ==============================
+[0m15:45:03.230610 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:45:03.231436 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'debug': 'False', 'invocation_command': 'dbt init netflix', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'partial_parse': 'True', 'version_check': 'True', 'use_colors': 'True', 'quiet': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'log_path': 'logs', 'profiles_dir': '/Users/priyankamaheshwari/.dbt', 'no_print': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'fail_fast': 'False'}
+[0m15:45:03.243376 [info ] [MainThread]: A project called netflix already exists here.
+[0m15:45:03.245468 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.09485998, "process_in_blocks": "0", "process_kernel_time": 0.206275, "process_mem_max_rss": "103038976", "process_out_blocks": "0", "process_user_time": 1.339386}
+[0m15:45:03.246249 [debug] [MainThread]: Command `dbt init` succeeded at 15:45:03.246110 after 0.10 seconds
+[0m15:45:03.246720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adbd350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106926850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a61cd0>]}
+[0m15:45:03.247141 [debug] [MainThread]: Flushing usage events
+[0m15:45:03.712958 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:45:19.739124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10568bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10571b1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10571b8d0>]}
+
+
+============================== 15:45:19.743960 | b9521f21-3182-4641-8d97-7b4b8def3d68 ==============================
+[0m15:45:19.743960 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:45:19.744730 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error': 'None', 'empty': 'None', 'printer_width': '80', 'log_cache_events': 'False', 'quiet': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'use_colors': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init netflix', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/priyankamaheshwari/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'target_path': 'None', 'version_check': 'True', 'log_format': 'default'}
+[0m15:45:19.758034 [debug] [MainThread]: Starter project path: /Users/priyankamaheshwari/Documents/DBT-project/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m15:45:19.764956 [info ] [MainThread]: 
+Your new dbt project "netflix" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:45:19.765569 [info ] [MainThread]: Setting up your profile.
+[0m15:50:52.863734 [info ] [MainThread]: Profile netflix written to /Users/priyankamaheshwari/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:50:52.872103 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 333.22665, "process_in_blocks": "0", "process_kernel_time": 0.31609, "process_mem_max_rss": "125239296", "process_out_blocks": "0", "process_user_time": 1.691628}
+[0m15:50:52.874437 [debug] [MainThread]: Command `dbt init` succeeded at 15:50:52.873787 after 333.23 seconds
+[0m15:50:52.875866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056c2a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055bfad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057b66d0>]}
+[0m15:50:52.876846 [debug] [MainThread]: Flushing usage events
+[0m15:50:53.389675 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:09:10.996113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ba2ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bb6050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bdbf50>]}
+
+
+============================== 20:09:11.004707 | 0cf3b940-8cef-4bf0-aa8a-e872b38df94e ==============================
+[0m20:09:11.004707 [info ] [MainThread]: Running with dbt=1.11.8
+[0m20:09:11.005707 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'no_print': 'None', 'log_path': 'logs', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'write_json': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'profiles_dir': '/Users/priyankamaheshwari/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'indirect_selection': 'eager'}
+[0m20:09:11.006425 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/priyankamaheshwari/Documents/DBT-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:09:11.008501 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.09678546, "process_in_blocks": "0", "process_kernel_time": 0.397921, "process_mem_max_rss": "103686144", "process_out_blocks": "0", "process_user_time": 1.653071}
+[0m20:09:11.009102 [debug] [MainThread]: Command `dbt run` failed at 20:09:11.008967 after 0.10 seconds
+[0m20:09:11.009815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110993dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a1bbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110adf550>]}
+[0m20:09:11.010265 [debug] [MainThread]: Flushing usage events
+[0m20:09:11.715404 [debug] [MainThread]: An error was encountered while trying to flush usage events
