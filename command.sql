@@ -35,3 +35,5 @@ mkdir ~/.dbt
 
 -- only want to run one model
 -- dbt run --model dim_users
+
+--dbt run --select fct_ratings
